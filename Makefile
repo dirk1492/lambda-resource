@@ -9,10 +9,13 @@ build: bin/lambda-resource-linux-amd64
 
 
 bin/lambda-resource-linux-amd64:
+	go get -u github.com/golang/dep/cmd/dep
+	dep init
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/lambda-resource-linux-amd64
 
 image: clean build
-	docker build -t hdsydsvenskan/lambda-resource:latest .
+	docker build -t dil001/lambda-resource:latest .
 
 clean:
 	rm bin/* || true
+	rm -rf vendor || true
