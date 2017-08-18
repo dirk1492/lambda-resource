@@ -19,7 +19,7 @@ run:
     - -exc
     - |
       export GOPATH="${PWD}/go"
-      export PACKAGE="github.com/Sydsvenskan/lambda-resource"
+      export PACKAGE="github.com/dirk1492/lambda-resource"
       export OUT_DIR="${PWD}/compiled"
       export PACKAGE_PATH="${GOPATH}/src/${PACKAGE}"
 
