@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Sydsvenskan/concourse"
-	"github.com/Sydsvenskan/lambda-resource/resource"
+	"github.com/dirk1492/concourse"
+	"github.com/dirk1492/lambda-resource/resource"
 )
 
 func main() {

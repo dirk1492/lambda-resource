@@ -4,8 +4,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/Sydsvenskan/concourse"
 	"github.com/aws/aws-sdk-go/service/lambda"
+	"github.com/dirk1492/concourse"
 	"github.com/pkg/errors"
 )
 

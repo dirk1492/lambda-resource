@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/Sydsvenskan/concourse"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/lambda"
+	"github.com/dirk1492/concourse"
 	"github.com/pkg/errors"
 )
 
