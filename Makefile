@@ -2,6 +2,8 @@
 
 export BUILD_DIR ?= bin
 
+-include .env
+
 build: bin/lambda-resource-linux-amd64
 	ln -s lambda-resource-linux-amd64 bin/in || true
 	ln -s lambda-resource-linux-amd64 bin/out || true
@@ -9,8 +11,7 @@ build: bin/lambda-resource-linux-amd64
 
 
 bin/lambda-resource-linux-amd64:
-	go get -u github.com/golang/dep/cmd/dep
-	dep init
+	$(GOPATH/bin/)dep ensure
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/lambda-resource-linux-amd64
 
 image: clean build
@@ -19,3 +20,6 @@ image: clean build
 clean:
 	rm bin/* || true
 	rm -rf vendor || true
+
+pipeline:
+	@echo $(TEST)
