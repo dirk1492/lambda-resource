@@ -21,20 +21,20 @@ resources:
   - name: sources
     type: git
     source:
-      uri: git@github.com:Sydsvenskan/lambda-resource.git
+      uri: git@github.com:dirk1492/lambda-resource.git
       branch: master
       private_key: {{github_deploy_key}}
   - name: image
     type: docker-image
     source:
-      email: {{docker_email}}
       username: {{docker_user}}
       password: {{docker_password}}
-      repository: hdsydsvenskan/lambda-resource
+      repository: dil001/lambda-resource
   - name: version
     type: semver
     source:
       driver: s3
+      initial_version: 0.0.1
       bucket: {{state_bucket}}
       key: versions/lambda-resource
       access_key_id: {{aws_id}}
