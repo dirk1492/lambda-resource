@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Sydsvenskan/concourse"
+	"github.com/dirk1492/lambda-resource/concourse"
 	"github.com/pkg/errors"
 )
 

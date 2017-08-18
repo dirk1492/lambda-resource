@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dirk1492/concourse"
+	"github.com/dirk1492/lambda-resource/concourse"
 	"github.com/dirk1492/lambda-resource/resource"
 )
 

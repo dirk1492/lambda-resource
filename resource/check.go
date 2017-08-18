@@ -5,7 +5,8 @@ import (
 	"strconv"
 
 	"github.com/aws/aws-sdk-go/service/lambda"
-	"github.com/dirk1492/concourse"
+	"github.com/dirk1492/lambda-resource/concourse"
+	
 	"github.com/pkg/errors"
 )
 

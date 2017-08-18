@@ -9,7 +9,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/lambda"
-	"github.com/dirk1492/concourse"
+	"github.com/dirk1492/lambda-resource/concourse"
 	"github.com/pkg/errors"
 )
 
