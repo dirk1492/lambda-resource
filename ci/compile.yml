@@ -23,7 +23,7 @@ run:
       export OUT_DIR="${PWD}/compiled"
       export PACKAGE_PATH="${GOPATH}/src/${PACKAGE}"
 
-	    go get -u github.com/golang/dep/cmd/dep
+      go get -u github.com/golang/dep/cmd/dep
 
       mkdir -p $PACKAGE_PATH
       git clone sources $PACKAGE_PATH
